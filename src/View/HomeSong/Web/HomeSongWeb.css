@@ -170,17 +170,13 @@
             display: grid;
             gap: 0;
             grid-template-columns: repeat(3, auto);
-            & .song-text{ 
+            & .song-text, & .song-text-strong{ 
                 display: flex;
                 place-items: center;
                 color: white;
                 
             }
-            & .song-text-strong{
-                display: flex;
-                place-items: center;
-                color: white;
-            }
+            
             
                @media (853px <= width <= 1728px) {
                 & .song-text{ 
