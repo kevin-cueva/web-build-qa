@@ -79,7 +79,7 @@ function HeroSong(){
                         <div className='song-text'>
                             Song
                         </div>
-                        <div className='song-text song-text-strong'> Song</div>
+                        <div className='song-text-strong'> Song</div>
                         <div className='song-text'> Song</div>
                     </div>
                     <div className='conteiner-icon'>
