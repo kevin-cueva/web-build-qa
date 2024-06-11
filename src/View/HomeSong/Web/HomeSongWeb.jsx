@@ -10,12 +10,15 @@ import iconChevronLefh from '../../../assets/icon/icon-chevron-left.png'
 import iconChevronRight from '../../../assets/icon/icon-chevron-right.png'
 
 import letThere from '../../../assets/img/Let-there-be-change.png';
+import sliderFill from '../../../assets/img/sliders-circle.png';
+import sliderVoid from '../../../assets/img/sliders-circle-void.png';
+
 export default function HomeSongWeb() {
     return (
 
         <div className="home-song-web-container-grip">
-            <HeaderSong/>
-            <HeroSong/>
+            <HeaderSong />
+            <HeroSong />
         </div>
     );
 }
@@ -29,7 +32,7 @@ function HeaderSong() {
                     <img src={accentureText} alt="" />
                 </div>
                 <div className='header-logodivider'>
-                    <img src ={headerLogoDivider} alt="" />
+                    <img src={headerLogoDivider} alt="" />
                 </div>
                 <div className='acc-song-logo'>
                     <img src={accentureSong} alt="" />
@@ -57,25 +60,25 @@ function HeaderSong() {
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     );
 }
 
-function HeroSong(){
-    return(
+function HeroSong() {
+    return (
         <div className='hero-song'>
-            <img src= {buildbanner} alt="" />
+            <img src={buildbanner} alt="" />
             <div className='overlay'></div>
             <div className='content'>
                 <div className='hero-content'>
                     <div className='conteiner-icon'>
-                    <div className='icon-chevron'>
-                        <img src={iconChevronLefh} alt="" />
+                        <div className='icon-chevron'>
+                            <img src={iconChevronLefh} alt="" />
+                        </div>
                     </div>
-                    </div>
-                   
+
                     <div className='song'>
                         <div className='song-text'>
                             Song
@@ -84,18 +87,30 @@ function HeroSong(){
                         <div className='song-text'> Song</div>
                     </div>
                     <div className='conteiner-icon'>
-                    <div className='icon-chevron'>
-                        <img src={iconChevronRight} alt="" />
+                        <div className='icon-chevron'>
+                            <img src={iconChevronRight} alt="" />
+                        </div>
                     </div>
-                    </div>
-                    
+
                 </div>
                 <div className='causel-control'>
                     <div className='conteiner-init'>
-                        <div className='circle-1 pading-button'>0</div>
-                        <div className='pading-button'>o</div>
-                        <div className='pading-button'>0</div>
-                        <div className='pading-button'>o</div>
+                        <div className='container-slider'>
+                            <div>
+                                <img src={sliderFill} className='slider-fill' alt="" />
+                            </div>
+                            <div>
+                                <img src={sliderVoid} className='slider-void' alt="" />
+                            </div>
+                            <div>
+                                <img src={sliderVoid} className='slider-void' alt="" />
+                            </div>
+                            <div>
+                                <img src={sliderVoid} className='slider-void' alt="" />
+                            </div>
+                        </div>
+
+
                     </div>
                     <div className='conteiner-centert'>
                         <img src={letThere} alt="" />

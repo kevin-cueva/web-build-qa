@@ -221,11 +221,38 @@
             & .conteiner-init{
                 width: 100%;
                 display: flex;
-                justify-content: start; /* Centrar horizontalmente */
+                justify-content: flex-start; /* Centrar horizontalmente */
                 align-items: flex-end; /* Alinear al fondo verticalmente */
-                & .circle-1{
-                   
+                & img{
+                    width: 24.8px;
+                    height: 24px;
                 }
+                & .container-slider{
+                    width: 200px;
+                    height: 24px;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    top: -10px;
+                    & div{
+                        width: 24.8px;
+                        height: 24px;
+                        top: -30px;
+                        place-items: center;
+
+                        & .slider-fill{
+                            width: 24.8px;
+                            height: 24px;
+                        }
+                        & .slider-void{
+                            width: 20.8px;
+                            height: 20px;
+                            align-items: center;
+
+                        }
+                    }
+                }
+                
                 
             }
             & .conteiner-centert{
