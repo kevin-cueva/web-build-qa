@@ -9,6 +9,7 @@ import buildbanner from '../../../assets/img/buildbanner.png'
 import iconChevronLefh from '../../../assets/icon/icon-chevron-left.png'
 import iconChevronRight from '../../../assets/icon/icon-chevron-right.png'
 
+import letThere from '../../../assets/img/Let-there-be-change.png';
 export default function HomeSongWeb() {
     return (
 
@@ -89,7 +90,20 @@ function HeroSong(){
                     </div>
                     
                 </div>
-                
+                <div className='causel-control'>
+                    <div className='conteiner-init'>
+                        <div className='circle-1 pading-button'>0</div>
+                        <div className='pading-button'>o</div>
+                        <div className='pading-button'>0</div>
+                        <div className='pading-button'>o</div>
+                    </div>
+                    <div className='conteiner-centert'>
+                        <img src={letThere} alt="" />
+                    </div>
+                    <div className='conteiner-end'>
+
+                    </div>
+                </div>
             </div>
         </div>
     )
