@@ -11,7 +11,7 @@ import iconChevronRight from '../../../assets/icon/icon-chevron-right.png'
 
 import letThere from '../../../assets/img/Let-there-be-change.png';
 import sliderFill from '../../../assets/img/sliders-circle.png';
-import sliderVoid from '../../../assets/img/sliders-circle-void.png';
+import sliderVoid from '../../../assets/img/sliders-void.png';
 
 export default function HomeSongWeb() {
     return (
