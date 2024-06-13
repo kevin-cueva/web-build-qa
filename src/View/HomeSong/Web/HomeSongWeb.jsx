@@ -131,13 +131,15 @@ function OurMission(){
              <div className='container-our-mission'>
                 <div className='our-mission-text'> 
                     <h2>
-                    We drive growth for out clients bussiness by reimagining experiences to answer human needs with purpose.
+                        We drive growth for out clients bussiness by reimagining experiences to answer human needs with purpose.
                     </h2>
                 </div>
 
                 <div className='our-mission-on-content'>
-                    <div className='our-mission-clients-img'></div>
-                    <div className='our-mission-clients'> <h3>Our mission is to help clients drive growht</h3></div>
+                    <div className='our-mission-clients'> <p>Our mission is to help clients <strong>drive growht</strong> through greater customer <strong>relevance </strong>
+                            and <strong>competitivenses</strong>, while positively impacting the planet, employes and society.
+                        </p>
+                    </div>
                 </div>
              </div>
         </div>

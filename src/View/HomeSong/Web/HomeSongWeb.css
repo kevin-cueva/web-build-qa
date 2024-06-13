@@ -315,11 +315,21 @@
         & .our-mission-on-content{
             grid-row: 3/4;
                 grid-column: 7/11;
-                background-color: antiquewhite;
-            }
+                border-left: 4px solid rgba(230, 230, 221, 100%);
+                display: flex;
+                place-items: center;
+                padding-left: 35px;
+            
             & .our-mission-clients{
+                font-size: 1vw;
+                & p{
+                    & strong{
+                        font-weight: 800;
+                    }
+                }
+            
                 
-
+            }
         }
     }
 }
