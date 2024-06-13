@@ -1,11 +1,11 @@
 .home-song-web-container-grip{
     display: grid;
-    grid-template-columns: repeat(12, auto) ;
+    grid-template-columns: repeat(12, 1fr) ;
     width: 100%;
     gap: 0 20px;
 }
 
-/*Header Song - init*/
+/** Header Song - init*/
 .header-song{
     grid-column: 1/13;
     height: 64px;
@@ -113,7 +113,7 @@
 }
 /*Header Song - End*/
 
-/*Hero-Song*/
+/*** Hero-Song ***/
 .hero-song{
     grid-column:1/13;
     height: 670px;
@@ -278,5 +278,48 @@
         }
     }
 }
-
 /*End-Hero-Song*/
+
+/*** Our mission ***/
+.our-mission{
+    grid-column: 2/12;
+    height: auto;
+
+
+    & .container-our-mission{
+        background-color: white;
+        width: 100%;
+        height: auto;
+        margin-top: 12vh;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 30% 30% 40%;
+
+        & .our-mission-text{
+            grid-row: 1/4;
+            grid-column: 1/6;
+            & h2{
+                font-size: 4vw;
+                font-stretch: ultra-expanded;
+                font-weight:900;
+                font-stretch: ultra-expanded;
+                letter-spacing: -0.03em;
+                line-height: 120%;
+                margin: 0;
+                background: linear-gradient(black 8%, #8800FF 72%);
+                color: transparent;
+                background-clip: text;
+                animation: gradient 8s linear infinite alternate;
+            }
+        }
+        & .our-mission-on-content{
+            grid-row: 3/4;
+                grid-column: 7/11;
+                background-color: antiquewhite;
+            }
+            & .our-mission-clients{
+                
+
+        }
+    }
+}

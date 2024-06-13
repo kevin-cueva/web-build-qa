@@ -19,6 +19,7 @@ export default function HomeSongWeb() {
         <div className="home-song-web-container-grip">
             <HeaderSong />
             <HeroSong />
+            <OurMission/>
         </div>
     );
 }
@@ -122,4 +123,23 @@ function HeroSong() {
             </div>
         </div>
     )
+}
+
+function OurMission(){
+    return(
+        <div className='our-mission'>
+             <div className='container-our-mission'>
+                <div className='our-mission-text'> 
+                    <h2>
+                    We drive growth for out clients bussiness by reimagining experiences to answer human needs with purpose.
+                    </h2>
+                </div>
+
+                <div className='our-mission-on-content'>
+                    <div className='our-mission-clients-img'></div>
+                    <div className='our-mission-clients'> <h3>Our mission is to help clients drive growht</h3></div>
+                </div>
+             </div>
+        </div>
+    );
 }
