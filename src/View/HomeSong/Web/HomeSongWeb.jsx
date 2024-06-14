@@ -19,7 +19,8 @@ export default function HomeSongWeb() {
         <div className="home-song-web-container-grip">
             <HeaderSong />
             <HeroSong />
-            <OurMission/>
+            <OurMission />
+            <Organized />
         </div>
     );
 }
@@ -125,11 +126,11 @@ function HeroSong() {
     )
 }
 
-function OurMission(){
-    return(
+function OurMission() {
+    return (
         <div className='our-mission'>
-             <div className='container-our-mission'>
-                <div className='our-mission-text'> 
+            <div className='container-our-mission'>
+                <div className='our-mission-text'>
                     <h2>
                         We drive growth for out clients bussiness by reimagining experiences to answer human needs with purpose.
                     </h2>
@@ -137,11 +138,36 @@ function OurMission(){
 
                 <div className='our-mission-on-content'>
                     <div className='our-mission-clients'> <p>Our mission is to help clients <strong>drive growht</strong> through greater customer <strong>relevance </strong>
-                            and <strong>competitivenses</strong>, while positively impacting the planet, employes and society.
+                        and <strong>competitivenses</strong>, while positively impacting the planet, employes and society.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function Organized() {
+    return (
+        <div className='organized'>
+            <div className='hwo-bg'></div>
+            <div className='container-organized-element-grid'>
+                <div className='container-organized-element-text'>
+                    <div className='organized-title'> <h3><strong>How </strong>we´re organized?</h3></div>
+                    <div className='organized-text'> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptas saepe accusantium possimus beatae corporis tenetur. Laudantium odit voluptatibus fugit similique, officiis facere assumenda rerum? Quidem autem nulla quos laudantium.
+
                         </p>
                     </div>
                 </div>
-             </div>
+                <div className='conteiner-organized-card'>
+                        <div className='organized-card'></div>
+                        <div className='organized-card'></div>
+                        <div className='organized-card'></div>
+                </div>
+
+            </div>
         </div>
     );
+
 }
