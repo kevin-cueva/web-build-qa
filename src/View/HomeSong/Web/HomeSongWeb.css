@@ -153,10 +153,10 @@
                 & .icon-chevron{
                     display: flex;
                     place-items: center;
-                    width: 80px;
+                    width: 5vw;
                     height: 82.62px;
                   & img{
-                    width: 80px;
+                    width: 5vw;
                     height: 82.62px;
                     align-items: center;
                   }
