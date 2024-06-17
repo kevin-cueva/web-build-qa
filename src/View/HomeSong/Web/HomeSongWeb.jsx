@@ -12,7 +12,7 @@ import iconChevronRight from '../../../assets/icon/icon-chevron-right.png'
 import letThere from '../../../assets/img/Let-there-be-change.png';
 import sliderFill from '../../../assets/img/sliders-circle.png';
 import sliderVoid from '../../../assets/img/sliders-void.png';
-
+import path8322 from '../../../assets/icon/Path-8322.svg'
 export default function HomeSongWeb() {
     return (
 
@@ -163,10 +163,10 @@ function Organized() {
                 <div className='conteiner-organized-card'>
                         <div className='organized-card'>
                             <div className='card-content'>
-
+                                <img src={path8322} alt="" />
                             </div>
                             <div className='card-chips'>
-
+                                   
                             </div>
                         </div>
                         <div className='organized-card'></div>

@@ -384,13 +384,18 @@
             grid-column: 2/12;
             display: flex;
             gap: 1em;
-            background-color: aliceblue;
 
             & .organized-card{
                 width: 100%;
                 max-height: 347px;
                 height: 100vh;
-                background-color: #8800FF;
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+
+                & .card-content{
+                    
+                }
             }
         }
     }
