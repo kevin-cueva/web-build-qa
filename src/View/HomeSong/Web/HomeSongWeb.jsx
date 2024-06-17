@@ -161,7 +161,14 @@ function Organized() {
                     </div>
                 </div>
                 <div className='conteiner-organized-card'>
-                        <div className='organized-card'></div>
+                        <div className='organized-card'>
+                            <div className='card-content'>
+
+                            </div>
+                            <div className='card-chips'>
+
+                            </div>
+                        </div>
                         <div className='organized-card'></div>
                         <div className='organized-card'></div>
                 </div>
