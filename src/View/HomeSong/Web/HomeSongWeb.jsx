@@ -13,6 +13,10 @@ import letThere from '../../../assets/img/Let-there-be-change.png';
 import sliderFill from '../../../assets/img/sliders-circle.png';
 import sliderVoid from '../../../assets/img/sliders-void.png';
 import path8322 from '../../../assets/icon/Path-8322.svg'
+import path1476 from '../../../assets/icon/Path1476.svg'
+import path4857 from '../../../assets/icon/Path4857.svg'
+
+
 export default function HomeSongWeb() {
     return (
 
@@ -164,13 +168,50 @@ function Organized() {
                         <div className='organized-card'>
                             <div className='card-content'>
                                 <img src={path8322} alt="" />
+                                <h4>Client</h4>
+                                <p> Focuses on understanding client's needs adipisicing
+                                    building those relationship.
+                                </p>
                             </div>
                             <div className='card-chips'>
-                                   
+                                   <div><p>Sales</p></div>
+                                   <div><p>Solutioning</p></div>
+                                   <div><p>Delivery</p></div>
                             </div>
                         </div>
-                        <div className='organized-card'></div>
-                        <div className='organized-card'></div>
+                        <div className='organized-card'>
+                            <div className='card-content'>
+                                <img src={path1476} alt="" />
+                                <h4>Capability</h4>
+                                <p> Focuses on solving client needs challenges through
+                                    talent and tools, magnifying craft and innovation. 
+                                </p>
+                            </div>
+                            <div className='card-chips'>
+                                   <div><p>Desing</p></div>
+                                   <div><p>Build</p></div>
+                                   <div><p>Communication</p></div>
+                                   <div><p>Intelligence</p></div>
+                                   <div><p>Run</p></div>
+                            </div>
+                        </div>
+                        <div className='organized-card'>
+                            <div className='card-content'>
+                                <img src={path4857} alt="" />
+                                <h4>Funtions</h4>
+                                <p> Focus on driving relevance and differentiation across
+                                    OneAccenture funcional strategies.
+                                </p>
+                            </div>
+                            <div className='card-chips'>
+                                   <div><p>Growth & Product lnn</p></div>
+                                   <div><p>Marketing</p></div>
+                                   <div><p>Commerce</p></div>
+                                   <div><p>Sales & Svc</p></div>
+                                   <div><p>Industry</p></div>
+                                   <div><p>Ecosystem</p></div>
+                            </div>
+                        </div>
                 </div>
 
             </div>

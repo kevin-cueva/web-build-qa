@@ -382,19 +382,63 @@
         }
         & .conteiner-organized-card{
             grid-column: 2/12;
-            display: flex;
+            display:grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
             gap: 1em;
-
+            height: auto;
             & .organized-card{
                 width: 100%;
-                max-height: 347px;
-                height: 100vh;
-                background-color: aqua;
                 display: flex;
-                justify-content: center;
-
+                flex-direction: column;
+                gap: 16px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.161);
+                background-color: white;
+                border-radius: 8px;
+                height: auto;
+                padding-bottom: 10px;
                 & .card-content{
-                    
+                    display: flex;
+                    flex-direction: column;
+                    place-items: center;
+                    flex-wrap: wrap;
+                    margin: 50px 20px 0 20px;
+                    & img{width: 4vw;}
+                    & h4{
+                        padding: 0;
+                        margin: 0;
+                        color: #A055F5;
+                        font-weight: 600;
+                        font-size: 1.4vw;
+                        padding-top: 2px;
+                        line-height: 24x;
+                    }
+                    & p{
+                        margin: 10px 20px 0 20px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                        font-size: 1.2vw;
+                    }
+                }
+
+                & .card-chips{  
+                    display: flex;
+                    flex-wrap: wrap; /*Multiples filas de ser necesario*/
+                    justify-content: center;
+                    gap: 8px;
+                    padding: 0px 4px;
+                    & div{
+                        background-color: #FAF5FF;
+                        border-radius: 999px;
+                        padding: 4px 12px;
+                    }
+                    & p{
+                        padding: 0;
+                        margin: 0;
+                        font-weight: 400;
+                        color: #A055F5;
+                        letter-spacing: -0.02em;
+                        font-size: 1.2vw;
+                    }
                 }
             }
         }
