@@ -25,6 +25,7 @@ export default function HomeSongWeb() {
             <HeroSong />
             <OurMission />
             <Organized />
+            <KnowMoreAboutUs />
         </div>
     );
 }
@@ -158,64 +159,89 @@ function Organized() {
             <div className='container-organized-element-grid'>
                 <div className='container-organized-element-text'>
                     <div className='organized-title'> <h3><strong>How </strong>we´re organized?</h3></div>
-                    <div className='organized-text'> 
+                    <div className='organized-text'>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptas saepe accusantium possimus beatae corporis tenetur. Laudantium odit voluptatibus fugit similique, officiis facere assumenda rerum? Quidem autem nulla quos laudantium.
 
                         </p>
                     </div>
                 </div>
                 <div className='conteiner-organized-card'>
-                        <div className='organized-card'>
-                            <div className='card-content'>
-                                <img src={path8322} alt="" />
-                                <h4>Client</h4>
-                                <p> Focuses on understanding client's needs adipisicing
-                                    building those relationship.
-                                </p>
-                            </div>
-                            <div className='card-chips'>
-                                   <div><p>Sales</p></div>
-                                   <div><p>Solutioning</p></div>
-                                   <div><p>Delivery</p></div>
-                            </div>
+                    <div className='organized-card'>
+                        <div className='card-content'>
+                            <img src={path8322} alt="" />
+                            <h4 className='acc-purple2'>Client</h4>
+                            <p> Focuses on understanding client's needs adipisicing
+                                building those relationship.
+                            </p>
                         </div>
-                        <div className='organized-card'>
-                            <div className='card-content'>
-                                <img src={path1476} alt="" />
-                                <h4>Capability</h4>
-                                <p> Focuses on solving client needs challenges through
-                                    talent and tools, magnifying craft and innovation. 
-                                </p>
-                            </div>
-                            <div className='card-chips'>
-                                   <div><p>Desing</p></div>
-                                   <div><p>Build</p></div>
-                                   <div><p>Communication</p></div>
-                                   <div><p>Intelligence</p></div>
-                                   <div><p>Run</p></div>
-                            </div>
+                        <div className='card-chips'>
+                            <div><p className='acc-purple2'>Sales</p></div>
+                            <div><p className='acc-purple2'>Solutioning</p></div>
+                            <div><p className='acc-purple2'>Delivery</p></div>
                         </div>
-                        <div className='organized-card'>
-                            <div className='card-content'>
-                                <img src={path4857} alt="" />
-                                <h4>Funtions</h4>
-                                <p> Focus on driving relevance and differentiation across
-                                    OneAccenture funcional strategies.
-                                </p>
-                            </div>
-                            <div className='card-chips'>
-                                   <div><p>Growth & Product lnn</p></div>
-                                   <div><p>Marketing</p></div>
-                                   <div><p>Commerce</p></div>
-                                   <div><p>Sales & Svc</p></div>
-                                   <div><p>Industry</p></div>
-                                   <div><p>Ecosystem</p></div>
-                            </div>
+                    </div>
+                    <div className='organized-card'>
+                        <div className='card-content'>
+                            <img src={path1476} alt="" />
+                            <h4 className='acc-purple1'>Capability</h4>
+                            <p> Focuses on solving client needs challenges through
+                                talent and tools, magnifying craft and innovation.
+                            </p>
                         </div>
+                        <div className='card-chips'>
+                            <div><p className='acc-purple1'>Desing</p></div>
+                            <div><p className='acc-purple1'>Build</p></div>
+                            <div><p className='acc-purple1'>Communication</p></div>
+                            <div><p className='acc-purple1'>Intelligence</p></div>
+                            <div><p className='acc-purple1'>Run</p></div>
+                        </div>
+                    </div>
+                    <div className='organized-card'>
+                        <div className='card-content'>
+                            <img src={path4857} alt="" />
+                            <h4 className='acc-purple3'>Funtions</h4>
+                            <p> Focus on driving relevance and differentiation across
+                                OneAccenture funcional strategies.
+                            </p>
+                        </div>
+                        <div className='card-chips'>
+                            <div><p className='acc-purple3'>Growth & Product lnn</p></div>
+                            <div><p className='acc-purple3'>Marketing</p></div>
+                            <div><p className='acc-purple3'>Commerce</p></div>
+                            <div><p className='acc-purple3'>Sales & Svc</p></div>
+                            <div><p className='acc-purple3'>Industry</p></div>
+                            <div><p className='acc-purple3'>Ecosystem</p></div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     );
 
+}
+
+function KnowMoreAboutUs() {
+    return (
+        <div className='know-more-us'>
+            <div className='text-know'> <h3>Know more about us</h3></div>
+            
+            <div className='carousel-content'>
+                <div className='carousel-controls'>
+                    <div className="icon"></div>
+                    <div className="icon"></div>
+                </div>
+                <div className="gradiente"></div>
+                <div className="corousel">
+                    <div className="card"></div>
+                    <div className="card"></div>
+                    <div className="card"></div>
+                    <div className="card"></div>
+                    <div className="card"></div>
+                    <div className="card"></div>
+                    <div className="card"></div>
+                </div>
+            </div>
+        </div>
+    );
 }

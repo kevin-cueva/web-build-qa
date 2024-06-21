@@ -8,6 +8,10 @@
   -webkit-font-smoothing: antialiased;
   color: black;
   background-color: #FFFFFF;
+  --accent-purples2: #A055F5;
+  --accent-purples1: #A100FF;
+  --accent-purples3: #460073;
+
 
 }
 body {
