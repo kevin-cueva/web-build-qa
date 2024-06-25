@@ -1,4 +1,5 @@
 import './HomeSongWeb.css'
+import { useRef } from 'react';
 import logomark from '../../../assets/img/logomark.png'
 import accentureText from '../../../assets/img/accenture.png'
 import accentureSong from '../../../assets/img/Acc_Song_SvcMrk_Black_Gradient_RGB 1.png'
@@ -15,6 +16,8 @@ import sliderVoid from '../../../assets/img/sliders-void.png';
 import path8322 from '../../../assets/icon/Path-8322.svg'
 import path1476 from '../../../assets/icon/Path1476.svg'
 import path4857 from '../../../assets/icon/Path4857.svg'
+import iconLeftKnow from '../../../assets/icon/icon-left-know.png';
+import iconRightKnow from '../../../assets/icon/icon-right-know.png';
 
 
 export default function HomeSongWeb() {
@@ -222,24 +225,55 @@ function Organized() {
 }
 
 function KnowMoreAboutUs() {
+    let botonTouch = useRef(0);
+    const sayHello = (boton) => {
+        if(boton == "Derecha" && botonTouch.current < 7-3 ) {
+            botonTouch.current += 1;
+            console.log("Pase")
+        }
+        
+        const moveAmount = botonTouch.current * 25;
+        const cardElements = document.querySelectorAll('.card');
+        cardElements.forEach(cardElement => {
+            cardElement.style.transition = 'transform 0.6s ease';
+            cardElement.style.transform = `translateX(-${moveAmount}vw)`;
+        });
+      };
+    
     return (
         <div className='know-more-us'>
             <div className='text-know'> <h3>Know more about us</h3></div>
             
             <div className='carousel-content'>
                 <div className='carousel-controls'>
-                    <div className="icon"></div>
-                    <div className="icon"></div>
+                    <div className="icon" onClick={() => sayHello("Derecha")} >
+                        <img src={iconLeftKnow} alt="" />
+                    </div>
+                    <div className="icon" onClick={() => sayHello("Izquierda")}>
+                        <img src={iconRightKnow} alt="" />
+                    </div>
                 </div>
                 <div className="gradiente"></div>
                 <div className="corousel">
-                    <div className="card"></div>
-                    <div className="card"></div>
-                    <div className="card"></div>
-                    <div className="card"></div>
-                    <div className="card"></div>
-                    <div className="card"></div>
-                    <div className="card"></div>
+                    <div className="card" id="card">
+                        <div className='img-fondo'>
+                            <img src="" alt="" />
+                        </div>
+                        <div className='card-content'>
+                            <div className='text'><h5>Client</h5></div>
+                            <div className='button-outline'>
+                                <div className='text'><h5>See More</h5></div>
+                                <div className='icon'>  ssd</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="card" id="card"></div>
+                    <div className="card" id="card"></div>
+                    <div className="card" id="card" ></div>
+                    <div className="card" id="card"></div>
+                    <div className="card" id="card"></div>
+                    <div className="card" id="card" ></div>
                 </div>
             </div>
         </div>

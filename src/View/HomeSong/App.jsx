@@ -2,8 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import HomeSongWeb from './Web/HomeSongWeb';
 function App() {
-  const MOVIL_NOW = 852;
-  const [count, setCount] = useState(0)
+  const MOVIL_NOW = 852;  
   const [isMovile, setIsMovile] = useState(window.innerWidth <= MOVIL_NOW);
 
   window.addEventListener('resize', function() {
