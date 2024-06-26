@@ -521,6 +521,15 @@
 
     & .text-know{
        grid-column: 2/16;
+       
+       & h3{
+            font-size: 3vw;
+            font-weight: 900;
+
+            & strong{
+                color: var(--accent-purples1);
+            }
+        }
     }
     & .carousel-content {
         grid-column: 1/16;

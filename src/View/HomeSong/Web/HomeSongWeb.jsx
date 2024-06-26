@@ -298,7 +298,7 @@ function KnowMoreAboutUs() {
       
     return (
         <div className='know-more-us'>
-            <div className='text-know'> <h3>Know more about us</h3></div>
+            <div className='text-know'> <h3>Know more <strong>about us</strong></h3></div>
             
             <div className='carousel-content'>
                 <div className='carousel-controls'>
@@ -309,7 +309,9 @@ function KnowMoreAboutUs() {
                         <img src={iconRightKnow} alt="" />
                     </div>
                 </div>
-                <div className="gradiente"></div>
+                <div className="gradiente">
+
+                </div>
                 <div className="corousel">
                     {cardData.map((card, index) => (
                         <div className="card" id="card" key={index}>
