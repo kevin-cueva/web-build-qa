@@ -19,7 +19,14 @@ import path4857 from '../../../assets/icon/Path4857.svg'
 import iconLeftKnow from '../../../assets/icon/icon-left-know.png';
 import iconRightKnow from '../../../assets/icon/icon-right-know.png';
 
+//Card
+import cardKnow1 from '../../../assets/img/GettyImages-1.png';
+import cardKnow2 from '../../../assets/img/GettyImages-2.png';
+import cardKnow3 from '../../../assets/img/GettyImages-3.png';
+import cardKnow4 from '../../../assets/img/GettyImages-4.png';
+import cardKnow5 from '../../../assets/img/GettyImages-5.png';
 
+import icArrowForward from '../../../assets/icon/ic_arrow_forward_24px.png';
 export default function HomeSongWeb() {
     return (
 
@@ -226,54 +233,98 @@ function Organized() {
 
 function KnowMoreAboutUs() {
     let botonTouch = useRef(0);
-    const sayHello = (boton) => {
-        if(boton == "Derecha" && botonTouch.current < 7-3 ) {
+    const slyder = (boton) => {
+        if(boton == "Izquierda" && botonTouch.current < 5-3 ) {
             botonTouch.current += 1;
-            console.log("Pase")
+            const moveAmount = botonTouch.current * 25;
+            const cardElements = document.querySelectorAll('.card');
+            cardElements.forEach(cardElement => {
+                cardElement.style.transition = 'transform 0.7s ease';
+                cardElement.style.transform = `translateX(-${moveAmount}vw)`;
+            });
+        }
+        else if(boton == "Derecha" && botonTouch.current >= 1){
+            botonTouch.current -= 1;
+            const moveAmount = botonTouch.current * 25;
+            const cardElements = document.querySelectorAll('.card');
+            cardElements.forEach(cardElement => {
+                cardElement.style.transition = 'transform 0.7s ease';
+                cardElement.style.transform = `translateX(-${moveAmount}vw)`;
+            });
         }
         
-        const moveAmount = botonTouch.current * 25;
-        const cardElements = document.querySelectorAll('.card');
-        cardElements.forEach(cardElement => {
-            cardElement.style.transition = 'transform 0.6s ease';
-            cardElement.style.transform = `translateX(-${moveAmount}vw)`;
-        });
+        
       };
     
+      //Card Data
+      const cardData = [
+        {
+            id: 1,
+            imgName: cardKnow1,
+            client: 'Client',
+            buttonText: 'See More',
+            link : ""
+        },
+        {
+            id: 2,
+            imgName: cardKnow2,
+            client: 'Capabilities',
+            buttonText: 'See More',
+            link : ""
+        },
+        {
+            id: 3,
+            imgName: cardKnow3,
+            client: 'Functions',
+            buttonText: 'See More',
+            link : ""
+        },
+        {
+            id: 4,
+            imgName: cardKnow4,
+            client: 'CORP Support',
+            buttonText: 'See More',
+            link : ""
+        },
+        {
+            id: 5,
+            imgName: cardKnow5,
+            client: 'Culture SQUAD',
+            buttonText: 'See More',
+            link : ""
+        },
+        
+      ];
+      
     return (
         <div className='know-more-us'>
             <div className='text-know'> <h3>Know more about us</h3></div>
             
             <div className='carousel-content'>
                 <div className='carousel-controls'>
-                    <div className="icon" onClick={() => sayHello("Derecha")} >
+                    <div className="icon" onClick={() => slyder("Derecha")} >
                         <img src={iconLeftKnow} alt="" />
                     </div>
-                    <div className="icon" onClick={() => sayHello("Izquierda")}>
+                    <div className="icon" onClick={() => slyder("Izquierda")}>
                         <img src={iconRightKnow} alt="" />
                     </div>
                 </div>
                 <div className="gradiente"></div>
                 <div className="corousel">
-                    <div className="card" id="card">
-                        <div className='img-fondo'>
-                            <img src="" alt="" />
+                    {cardData.map((card, index) => (
+                        <div className="card" id="card" key={index}>
+                            <div className='img-fondo'>
+                            <img src={card.imgName} alt="" />
                         </div>
                         <div className='card-content'>
-                            <div className='text'><h5>Client</h5></div>
+                            <div className='text'><h5>{card.client}</h5></div>
                             <div className='button-outline'>
                                 <div className='text'><h5>See More</h5></div>
-                                <div className='icon'>  ssd</div>
+                                <div className='icon'> <img src={icArrowForward} alt="" /></div>
                             </div>
                         </div>
-
-                    </div>
-                    <div className="card" id="card"></div>
-                    <div className="card" id="card"></div>
-                    <div className="card" id="card" ></div>
-                    <div className="card" id="card"></div>
-                    <div className="card" id="card"></div>
-                    <div className="card" id="card" ></div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
