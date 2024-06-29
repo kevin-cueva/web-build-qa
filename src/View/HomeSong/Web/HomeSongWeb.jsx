@@ -25,6 +25,8 @@ import cardKnow2 from '../../../assets/img/GettyImages-2.png';
 import cardKnow3 from '../../../assets/img/GettyImages-3.png';
 import cardKnow4 from '../../../assets/img/GettyImages-4.png';
 import cardKnow5 from '../../../assets/img/GettyImages-5.png';
+/***Life Center***/
+import lifeCenter from '../../../assets/img/lifeCenter.png';
 
 import icArrowForward from '../../../assets/icon/ic_arrow_forward_24px.png';
 export default function HomeSongWeb() {
@@ -36,6 +38,7 @@ export default function HomeSongWeb() {
             <OurMission />
             <Organized />
             <KnowMoreAboutUs />
+            <LifeCentricBussiness />
         </div>
     );
 }
@@ -98,10 +101,14 @@ function HeroSong() {
 
                     <div className='song'>
                         <div className='song-text'>
-                            Song
+                            <span translate="no">Song</span>
                         </div>
-                        <div className='song-text-strong'> Song</div>
-                        <div className='song-text'> Song</div>
+                        <div className='song-text-strong'> 
+                            <span translate="no">Song</span>
+                        </div>
+                        <div className='song-text'>
+                            <span translate="no">Song</span>
+                        </div>
                     </div>
                     <div className='conteiner-icon'>
                         <div className='icon-chevron'>
@@ -234,7 +241,7 @@ function Organized() {
 function KnowMoreAboutUs() {
     let botonTouch = useRef(0);
     const slyder = (boton) => {
-        if(boton == "Izquierda" && botonTouch.current < 5-3 ) {
+        if (boton == "Izquierda" && botonTouch.current < 5 - 3) {
             botonTouch.current += 1;
             const moveAmount = botonTouch.current * 25;
             const cardElements = document.querySelectorAll('.card');
@@ -243,7 +250,7 @@ function KnowMoreAboutUs() {
                 cardElement.style.transform = `translateX(-${moveAmount}vw)`;
             });
         }
-        else if(boton == "Derecha" && botonTouch.current >= 1){
+        else if (boton == "Derecha" && botonTouch.current >= 1) {
             botonTouch.current -= 1;
             const moveAmount = botonTouch.current * 25;
             const cardElements = document.querySelectorAll('.card');
@@ -252,54 +259,54 @@ function KnowMoreAboutUs() {
                 cardElement.style.transform = `translateX(-${moveAmount}vw)`;
             });
         }
-        
-        
-      };
-    
-      //Card Data
-      const cardData = [
+
+
+    };
+
+    //Card Data
+    const cardData = [
         {
             id: 1,
             imgName: cardKnow1,
             client: 'Client',
             buttonText: 'See More',
-            link : ""
+            link: ""
         },
         {
             id: 2,
             imgName: cardKnow2,
             client: 'Capabilities',
             buttonText: 'See More',
-            link : ""
+            link: ""
         },
         {
             id: 3,
             imgName: cardKnow3,
             client: 'Functions',
             buttonText: 'See More',
-            link : ""
+            link: ""
         },
         {
             id: 4,
             imgName: cardKnow4,
             client: 'CORP Support',
             buttonText: 'See More',
-            link : ""
+            link: ""
         },
         {
             id: 5,
             imgName: cardKnow5,
             client: 'Culture SQUAD',
             buttonText: 'See More',
-            link : ""
+            link: ""
         },
-        
-      ];
-      
+
+    ];
+
     return (
         <div className='know-more-us'>
             <div className='text-know'> <h3>Know more <strong>about us</strong></h3></div>
-            
+
             <div className='carousel-content'>
                 <div className='carousel-controls'>
                     <div className="icon" onClick={() => slyder("Derecha")} >
@@ -316,19 +323,47 @@ function KnowMoreAboutUs() {
                     {cardData.map((card, index) => (
                         <div className="card" id="card" key={index}>
                             <div className='img-fondo'>
-                            <img src={card.imgName} alt="" />
-                        </div>
-                        <div className='card-content'>
-                            <div className='text'><h5>{card.client}</h5></div>
-                            <div className='button-outline'>
-                                <div className='text'><h5>See More</h5></div>
-                                <div className='icon'> <img src={icArrowForward} alt="" /></div>
+                                <img src={card.imgName} alt="" />
                             </div>
-                        </div>
+                            <div className='card-content'>
+                                <div className='text'><h5>{card.client}</h5></div>
+                                <div className='button-outline'>
+                                    <div className='text'><h5>See More</h5></div>
+                                    <div className='icon'> <img src={icArrowForward} alt="" /></div>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
+        </div>
+    );
+}
+
+function LifeCentricBussiness() {
+    return (
+        <div className='life-centric-business'>
+            <div className='lcb-content'>
+                <div className='the-new-formula'>
+                    <div className='tnf-content'>
+                        <h2>The new formula for <br /> Growth through <br /> Relevance: <br /> <strong>Life-centric Business</strong></h2>
+                        <p>Life is moving faster than ever before, our research is showing that the majority of customers have fundamentally changed their values and life’s purpose in the last year. ​ This change is creating a powerful tension between businesses and their customers: businesses are struggling to keep up with the accelerating pace of change, and customers are left feeling underserved. We call this gulf the crisis of relevance, and many clients feel ill-equipped to tackle it. <br /><br />
+                            we believe the solution lies in bold new creative solutions, delivered at a faster pace than ever before. <strong>
+                            These solutions will be the next great frontier for business growth, and they require a brand-new approach. One that widens a business’s aperture, and utilizes the full power of creativity, intelligence, technology, operations, industry, and ecosystem knowledge.
+                                </strong> </p>
+                    </div>
+                    <div className='tnf-img'>
+                        <div>
+                            <img src={lifeCenter} alt="" />
+                        </div>
+                        <div>
+                            <p>We call this approach life centricity</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='key-ways-life-centricity'></div>
+            </div>
+
         </div>
     );
 }
