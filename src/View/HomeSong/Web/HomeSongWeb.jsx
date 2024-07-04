@@ -187,7 +187,7 @@ function Organized() {
                         <div className='card-content'>
                             <img src={path8322} alt="" />
                             <h4 className='acc-purple2'>Client</h4>
-                            <p> Focuses on understanding client's needs adipisicing
+                            <p> Focuses on understanding clients needs adipisicing
                                 building those relationship.
                             </p>
                         </div>
@@ -361,7 +361,12 @@ function LifeCentricBussiness() {
                         </div>
                     </div>
                 </div>
-                <div className='key-ways-life-centricity'></div>
+                <div className='key-ways-life-centricity'>
+                    <div className='key-ways-title'>
+                        <h3>Key ways from customer <br /> centricity to <strong>life centricity</strong></h3>
+                    </div>
+                    <div className='key-ways-card'></div>
+                </div>
             </div>
 
         </div>
