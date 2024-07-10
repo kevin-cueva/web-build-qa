@@ -27,6 +27,8 @@ import cardKnow4 from '../../../assets/img/GettyImages-4.png';
 import cardKnow5 from '../../../assets/img/GettyImages-5.png';
 /***Life Center***/
 import lifeCenter from '../../../assets/img/lifeCenter.png';
+//card - life-centri
+import path7182 from '../../../assets/icon/path7182.svg'
 
 import icArrowForward from '../../../assets/icon/ic_arrow_forward_24px.png';
 export default function HomeSongWeb() {
@@ -343,6 +345,10 @@ function KnowMoreAboutUs() {
 function LifeCentricBussiness() {
     return (
         <div className='life-centric-business'>
+            <div className='lcb-bg'>
+                <div>
+                </div>
+            </div>
             <div className='lcb-content'>
                 <div className='the-new-formula'>
                     <div className='tnf-content'>
@@ -365,7 +371,25 @@ function LifeCentricBussiness() {
                     <div className='key-ways-title'>
                         <h3>Key ways from customer <br /> centricity to <strong>life centricity</strong></h3>
                     </div>
-                    <div className='key-ways-card'></div>
+                    <div className='key-ways-card'>
+                        <div className='card'>
+                            <div className='card-content'>
+                                <img src={path7182} alt="" />
+                                <p>Focuses on understanding clients needs</p>
+                            </div>
+                        </div>
+                        <div className='card'>
+                            <div className='card-content'>
+                                <img src={path7182} alt="" />
+                                <p>Focuses on understanding clients needs</p>
+                            </div>
+                        </div> <div className='card'>
+                            <div className='card-content'>
+                                <img src={path7182} alt="" />
+                                <p>Focuses on understanding clients needs</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
