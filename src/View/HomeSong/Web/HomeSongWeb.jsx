@@ -29,6 +29,9 @@ import cardKnow5 from '../../../assets/img/GettyImages-5.png';
 import lifeCenter from '../../../assets/img/lifeCenter.png';
 //card - life-centri
 import path7182 from '../../../assets/icon/path7182.svg'
+import path6473 from '../../../assets/icon/path6473.svg'
+import path7159 from '../../../assets/icon/path7159.svg'
+
 
 import icArrowForward from '../../../assets/icon/ic_arrow_forward_24px.png';
 export default function HomeSongWeb() {
@@ -375,18 +378,24 @@ function LifeCentricBussiness() {
                         <div className='card'>
                             <div className='card-content'>
                                 <img src={path7182} alt="" />
-                                <p>Focuses on understanding clients needs</p>
+                                <p>See and treat customers not​ just as buyers, but 
+                                    <strong>&nbsp;ever-changing​multi-dimensional people</strong>.
+                                </p>
                             </div>
                         </div>
                         <div className='card'>
                             <div className='card-content'>
-                                <img src={path7182} alt="" />
-                                <p>Focuses on understanding clients needs</p>
+                                <img src={path6473} alt="" />
+                                <p>Understand and be relevant in the 
+                                    <strong>
+                                    &nbsp;life forces that most profoundly ​affect customers lives.
+                                    </strong>
+                                </p>
                             </div>
                         </div> <div className='card'>
                             <div className='card-content'>
-                                <img src={path7182} alt="" />
-                                <p>Focuses on understanding clients needs</p>
+                                <img src={path7159} alt="" />
+                                <p><strong>Proactively provide value to​ customers,</strong> while positively impacting all planet, employees, society​.</p>
                             </div>
                         </div>
                     </div>
