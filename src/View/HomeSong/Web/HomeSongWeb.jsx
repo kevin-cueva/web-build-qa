@@ -44,6 +44,7 @@ export default function HomeSongWeb() {
             <Organized />
             <KnowMoreAboutUs />
             <LifeCentricBussiness />
+            <KnowUs />
         </div>
     );
 }
@@ -375,7 +376,7 @@ function LifeCentricBussiness() {
                         <h3>Key ways from customer <br /> centricity to <strong>life centricity</strong></h3>
                     </div>
                     <div className='key-ways-card'>
-                        <div className='card'>
+                        <div className='card-life'>
                             <div className='card-content'>
                                 <img src={path7182} alt="" />
                                 <p>See and treat customers not​ just as buyers, but 
@@ -383,7 +384,7 @@ function LifeCentricBussiness() {
                                 </p>
                             </div>
                         </div>
-                        <div className='card'>
+                        <div className='card-life'>
                             <div className='card-content'>
                                 <img src={path6473} alt="" />
                                 <p>Understand and be relevant in the 
@@ -392,7 +393,7 @@ function LifeCentricBussiness() {
                                     </strong>
                                 </p>
                             </div>
-                        </div> <div className='card'>
+                        </div> <div className='card-life'>
                             <div className='card-content'>
                                 <img src={path7159} alt="" />
                                 <p><strong>Proactively provide value to​ customers,</strong> while positively impacting all planet, employees, society​.</p>
@@ -403,5 +404,25 @@ function LifeCentricBussiness() {
             </div>
 
         </div>
+    );
+}
+
+function KnowUs(){
+    return(
+        <>
+            <div className='know-us'> 
+                <div className='know-us-container'>
+                <div className='text-know-us'>
+                    <h3>Know us</h3>
+                </div>
+                <div className='know-us-carousel'>
+
+                </div>
+                <div className='know-us-button'>
+
+                </div>
+                </div>
+            </div>
+        </>
     );
 }
