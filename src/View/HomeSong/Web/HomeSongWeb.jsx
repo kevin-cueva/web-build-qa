@@ -412,15 +412,29 @@ function KnowUs(){
         <>
             <div className='know-us'> 
                 <div className='know-us-container'>
-                <div className='text-know-us'>
-                    <h3>Know us</h3>
-                </div>
-                <div className='know-us-carousel'>
+                    <div className='text-know-us'>
+                        <h3>Know us</h3>
+                    </div>
+                    <div className='know-us-carousel'>
+                        <div className='boton-carousel-left'>
+                            <img src={iconLeftKnow} alt="" />
+                        </div>
+                        <div className='carousel-container-cards'>
+                            <div className='carousel-know-card'></div>
+                            <div className='carousel-know-card'></div>
+                            <div className='carousel-know-card'></div>
+                            <div className='carousel-know-card'></div>
+                            <div className='carousel-know-card'></div>
+                            <div className='carousel-know-card'></div>
 
-                </div>
-                <div className='know-us-button'>
-
-                </div>
+                         
+                        </div>
+                        <div className='boton-carousel-right'>
+                            <img src={iconRightKnow} alt="" />
+                        </div>
+                    </div>
+                    <div className='know-us-button'>
+                    </div>
                 </div>
             </div>
         </>

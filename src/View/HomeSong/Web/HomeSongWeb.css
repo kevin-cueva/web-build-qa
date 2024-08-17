@@ -115,7 +115,7 @@
         & li {
             width: 100px;
         }
-
+    
     }
 }
 
@@ -362,8 +362,6 @@
                         font-weight: 800;
                     }
                 }
-
-
             }
         }
     }
@@ -698,7 +696,6 @@
 
                 & h2 {
                     flex: 1;
-                    /* Todos los elementos hijos tendrán el mismo tamaño */
                     margin: 0;
                     padding: 0;
                     font-size: 3.7vw;
@@ -717,7 +714,6 @@
 
                 & p {
                     flex: 1;
-                    /* Todos los elementos hijos tendrán el mismo tamaño */
                     margin: 0;
                     padding: 0;
                     line-height: 150%;
@@ -815,7 +811,6 @@
 
 /*Know us*/
 .know-us{
-    background-color: yellowgreen;
     grid-column: 1/16;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -832,6 +827,57 @@
         background-color: #8800FF;
         align-self: center;
         justify-self: center;
-        
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        & h3{
+            padding: 0;
+            margin: 0;
+            background-color: #f2f2f2;
+            text-align: center;
+            font-size: clamp(28px, 2.1vw, 80px);
+        }
+        & .know-us-carousel{
+            min-height: 274px;
+            height: auto;
+            display: flex;
+            
+            
+            & .boton-carousel-left, .boton-carousel-right{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                & img{
+                    min-width: 2.5vw;
+                    border: 3.9px solid var(--accent-purples1);
+                    border-radius: 3vw;
+                    background-color: white;
+                }
+                
+            }
+            & .carousel-container-cards{
+                width: 95%;
+                height: 100%;
+                overflow: hidden;
+                background-color: bisque;
+                display: flex;
+                flex-flow: row nowrap;
+                flex-direction: row;
+                gap: 24px;
+                padding:0px 24px;
+                & .carousel-know-card{
+                   height: 100%;
+                   min-width: calc((100% - 4 * 24px) / 5);
+                   background-color: rgb(155, 9, 9); 
+                   overflow: hidden;
+                }
+                @media (min-width: 853px) and (max-width: 1460px) {
+                    & .carousel-know-card{
+                        min-width: calc((100% - 3 * 24px) / 4);
+                    }     
+                }
+            }
+        }   
     }
 }
