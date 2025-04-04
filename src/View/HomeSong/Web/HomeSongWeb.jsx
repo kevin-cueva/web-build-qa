@@ -347,6 +347,7 @@ function KnowMoreAboutUs() {
 }
 
 function LifeCentricBussiness() {
+    
     return (
         <div className='life-centric-business'>
             <div className='lcb-bg'>
@@ -357,7 +358,7 @@ function LifeCentricBussiness() {
                 <div className='the-new-formula'>
                     <div className='tnf-content'>
                         <h2>The new formula for <br /> Growth through <br /> Relevance: <br /> <strong>Life-centric Business</strong></h2>
-                        <p>Life is moving faster than ever before, our research is showing that the majority of customers have fundamentally changed their values and life’s purpose in the last year. ​ This change is creating a powerful tension between businesses and their customers: businesses are struggling to keep up with the accelerating pace of change, and customers are left feeling underserved. We call this gulf the crisis of relevance, and many clients feel ill-equipped to tackle it. <br /><br />
+                        <p>Life is moving faster than ever before, our research is showing that the majority of customers have fundamentally changed their values and life’s purpose in the last year. This change is creating a powerful tension between businesses and their customers: businesses are struggling to keep up with the accelerating pace of change, and customers are left feeling underserved. We call this gulf the crisis of relevance, and many clients feel ill-equipped to tackle it. <br /><br />
                             we believe the solution lies in bold new creative solutions, delivered at a faster pace than ever before. <strong>
                             These solutions will be the next great frontier for business growth, and they require a brand-new approach. One that widens a business’s aperture, and utilizes the full power of creativity, intelligence, technology, operations, industry, and ecosystem knowledge.
                                 </strong> </p>
@@ -379,8 +380,8 @@ function LifeCentricBussiness() {
                         <div className='card-life'>
                             <div className='card-content'>
                                 <img src={path7182} alt="" />
-                                <p>See and treat customers not​ just as buyers, but 
-                                    <strong>&nbsp;ever-changing​multi-dimensional people</strong>.
+                                <p>See and treat customers not just as buyers, but 
+                                    <strong>&nbsp;ever-changingmulti-dimensional people</strong>.
                                 </p>
                             </div>
                         </div>
@@ -389,7 +390,7 @@ function LifeCentricBussiness() {
                                 <img src={path6473} alt="" />
                                 <p>Understand and be relevant in the 
                                     <strong>
-                                    &nbsp;life forces that most profoundly ​affect customers lives.
+                                    &nbsp;life forces that most profoundly affect customers lives.
                                     </strong>
                                 </p>
                             </div>
@@ -408,6 +409,31 @@ function LifeCentricBussiness() {
 }
 
 function KnowUs(){
+    let botonTouch2 = useRef(0);
+    const slyder = (boton) => {
+        if (boton == "Izquierda" && botonTouch2.current < 5 - 3) {
+            botonTouch2.current += 1;
+            console.log(botonTouch2.current);
+            const moveAmount = botonTouch2.current * 16;
+            const cardElements = document.querySelectorAll('.carousel-know-card');
+            cardElements.forEach(cardElement => {
+                cardElement.style.transition = 'transform 0.7s ease';
+                cardElement.style.transform = `translateX(-${moveAmount}vw)`;
+            });
+        }
+        else if (boton == "Derecha" && botonTouch2.current >= 1) {
+            console.log(botonTouch2.current + "derecha");
+            botonTouch2.current -= 1;
+            const moveAmount = botonTouch2.current * 16;
+            const cardElements = document.querySelectorAll('.carousel-know-card');
+            cardElements.forEach(cardElement => {
+                cardElement.style.transition = 'transform 0.7s ease';
+                cardElement.style.transform = `translateX(-${moveAmount}vw)`;
+            });
+        }
+
+
+    };
     return(
         <>
             <div className='know-us'> 
@@ -416,7 +442,7 @@ function KnowUs(){
                         <h3>Know us</h3>
                     </div>
                     <div className='know-us-carousel'>
-                        <div className='boton-carousel-left'>
+                        <div className='boton-carousel-left' onClick={() => slyder("Derecha")}>
                             <img src={iconLeftKnow} alt="" />
                         </div>
                         <div className='carousel-container-cards'>
@@ -429,7 +455,7 @@ function KnowUs(){
 
                          
                         </div>
-                        <div className='boton-carousel-right'>
+                        <div className='boton-carousel-right' onClick={() => slyder("Izquierda")}>
                             <img src={iconRightKnow} alt="" />
                         </div>
                     </div>
